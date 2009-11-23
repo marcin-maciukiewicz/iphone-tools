@@ -1,0 +1,22 @@
+# project root folder
+project_root: /Users/..../ProjectXYZ/
+# build configuration name
+release_configuration: "Release AdHoc"
+# provision certificate used to sign the bundle
+provisioning_profile: ~/private/secret/.../Application_AdHoc.mobileprovision
+# output folder to hold application bundle and dSYM file
+release_dir: ~/release/
+# 
+sdk_version: 3.0
+# plist file name
+plist_file: Application-Info.plist
+# plist key to check
+plist_check:
+    # main version number
+    CFBundleShortVersionString: 1.0
+    # application id
+    CFBundleIdentifier: com.application.adhoc
+    # executable name
+    CFBundleExecutable: MyAwsomApplication
+    # applications label (visible in the spring board)
+    CFBundleDisplayName: ${PRODUCT_NAME}
